@@ -72,8 +72,8 @@ MediaSlideshow also supports playing an AVAsset. Make sure to include the "Media
 ```swift
 
 let dataSource = ImageAndVideoSlideshowDataSource(inputs:[
-    UIImageSource(image: UIImage(named: "myImage"))!,
-    AVInputSource(url: "https://url-to-video", autoplay: true)
+    .image(UIImageSource(image: UIImage(named: "myImage"))!),
+    .av(AVInputSource(url: "https://url-to-video", autoplay: true))
 ])
 
 slideshow.dataSource = dataSource
