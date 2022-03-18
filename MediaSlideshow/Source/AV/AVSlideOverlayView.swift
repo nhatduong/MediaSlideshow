@@ -125,6 +125,7 @@ public class AVSlidePlayingOverlayView: UIView, AVSlideOverlayView {
         var labelFrame = countdownLabel.frame
         labelFrame.size.width = countdownLabel.intrinsicContentSize.width * 1.2
         countdownLabel.frame = labelFrame
+        self.backgroundColor = .clear
     }
 
     public func playerDidUpdateToTime(_ currentTime: TimeInterval, duration: TimeInterval?) {

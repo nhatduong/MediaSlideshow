@@ -36,6 +36,7 @@ public class AVPlayerSlide: UIView, MediaSlideshowSlide {
         if playerController.showsPlaybackControls {
             addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didSingleTap)))
         }
+        self.backgroundColor = .clear
     }
 
     required public init?(coder aDecoder: NSCoder) {
